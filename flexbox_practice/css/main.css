@@ -1,0 +1,217 @@
+/* Your code goes here */
+
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex-flow: row;
+  /* align-content: flex-start; */
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 1000px;
+  border: 2px solid #fff;
+}
+
+.container div {
+  /* width: 100px; */
+  margin: 0;
+  /* flex-grow: 1; */
+  width: 150px;
+  flex: 1 1 20%;
+}
+.container div:nth-child(3) {
+  /* flex-grow: 2; */
+  /* width: calc(2 / 5 * 800px); */
+  flex-shrink: 9;
+  flex-grow: 2;
+}
+.container div:nth-child(5) {
+  /* flex-grow: 2; */
+}
+.container div:nth-child(1) {
+  /* flex-grow: 2; */
+}
+
+/* -------------------------------------------------- */
+.flex {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+}
+
+.cell > div {
+  background: rgba(255, 255, 255, 0.7);
+  height: 100%;
+}
+.cell > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.gutter {
+  margin: -10px 0 10px -10px;
+}
+.gutter > .cell {
+  padding: 10px 0 0 10px;
+}
+
+.large {
+  flex: 2;
+}
+
+/* -------------------------------------- */
+.flex_grid {
+  display: flex;
+}
+
+.gutters div div {
+  background: rgba(255, 255, 255, 1);
+  padding: 10px;
+  height: 100%;
+  border-radius: 10px;
+}
+.gutters div div img {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed grey;
+}
+.gutters {
+  margin: -10px 0 10px -10px;
+}
+.gutters div {
+  padding: 10px 0 0 10px;
+}
+
+.full {
+  flex-basis: 100%;
+}
+.half {
+  flex-basis: 50%;
+}
+.third {
+  flex-basis: 33.33333%;
+}
+.fourth {
+  flex-basis: 25%;
+}
+.fifth {
+  flex-basis: 20%;
+}
+.sixth {
+  flex-basis: 16.66666%;
+}
+.seventh {
+  flex-basis: 14.2857142857%;
+}
+.eighth {
+  flex-basis: 12.5%;
+}
+.ninth {
+  flex-basis: 11.11111%;
+}
+.tenth {
+  flex-basis: 10%;
+}
+
+/* -------------------------------------------------- */
+
+.vcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 3px dashed #fff;
+}
+.vcenter * {
+  /* margin: auto; */
+}
+
+.vcenter p {
+  margin: 0;
+  padding: 20px;
+  border: 2px solid #fff;
+}
+
+nav {
+  max-width: 400px;
+}
+
+li {
+  flex-basis: 25%;
+  list-style: none;
+}
+
+/* ------------------------------------------------- */
+
+.text-cnt {
+  text-align: center;
+}
+h1 {
+  text-decoration: underline wavy;
+}
+.section {
+  border: 3px dashed #fff;
+  margin: 10px 0 10px 0;
+}
+.after_text {
+  order: 1;
+}
+.media {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px;
+}
+
+.figure {
+  flex: 1 1 40%;
+  align-self: flex-start;
+}
+.figure img {
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+.media_body {
+  flex: 1 1 60%;
+  /* align-self: flex-end; */
+}
+.media_body p {
+  margin: 0 10px 20px 10px;
+}
+
+/* --------------------------------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  flex-grow: 1;
+}
+#main * {
+  padding: 20px;
+  border: 1px solid #fff;
+}
+.left_sidebar {
+  flex: 1 1 0%;
+  order: 1;
+}
+.right_sidebar {
+  flex: 1 1 0%;
+}
+.main_content {
+  flex: 4 1 0%;
+}
+
+#footer,
+#header {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.7);
+}
