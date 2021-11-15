@@ -37,7 +37,7 @@ git clone  https://github.com/DilshadNoshad/Blank.css.git
 
 # Site logo
 
-![screenshot](https://i.ibb.co/h1YhQG3/site-logo-D.png)
+![screenshot](https://raw.githubusercontent.com/DilshadNoshad/D-vers_web/main/public/img/D-vers.png)
 
 <br>
 
